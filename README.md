@@ -38,8 +38,7 @@ In Claude Code:
 /plugin install production-guards@claude-lean-mods
 ```
 
-Install the ones you want. They don't depend on each other. `/spend` shows output-offload's
-totals when both are installed.
+Install the ones you want. They don't depend on each other.
 
 These settings make the mods work better. Add them to the `env` block of `~/.claude/settings.json`:
 
