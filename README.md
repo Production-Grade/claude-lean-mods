@@ -77,6 +77,13 @@ claude plugin test .
 - model-router only fills a model nobody chose. An explicit `model`, an agent type with its own
   model, a fork or a workflow agent is left alone.
 
+## More from Production Grade
+
+Walkthroughs of these mods and of how I run Claude Code on real work:
+
+- YouTube: [@productiongradeai](https://www.youtube.com/@productiongradeai)
+- Substack: [productiongrade.substack.com](https://productiongrade.substack.com)
+
 ## Licence
 
 MIT
