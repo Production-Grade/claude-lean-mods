@@ -1,0 +1,48 @@
+{
+  "name": "claude-lean-mods",
+  "owner": {
+    "name": "Production Grade"
+  },
+  "plugins": [
+    {
+      "name": "handoff-compact",
+      "source": {
+        "source": "github",
+        "repo": "Production-Grade/handoff-compact"
+      },
+      "description": "Every compaction (main session or sub-agent) writes a structured handover, saves it to disk, and work carries on; idle big sessions compact before the cache expires."
+    },
+    {
+      "name": "output-offload",
+      "source": {
+        "source": "github",
+        "repo": "Production-Grade/output-offload"
+      },
+      "description": "Big tool results go to a file; the model gets a short Haiku digest and the path to grep, so contexts stop refilling."
+    },
+    {
+      "name": "usage-meter",
+      "source": {
+        "source": "github",
+        "repo": "Production-Grade/usage-meter"
+      },
+      "description": "Status line with this session's spend and $/hour plus all sessions' $/hour; alarms on budget, compaction churn and big Haiku contexts; /spend breakdown."
+    },
+    {
+      "name": "model-router",
+      "source": {
+        "source": "github",
+        "repo": "Production-Grade/model-router"
+      },
+      "description": "Picks Haiku, Sonnet or the parent's model for each subagent and new session from what the task is, and starts sessions at medium effort."
+    },
+    {
+      "name": "production-guards",
+      "source": {
+        "source": "github",
+        "repo": "Production-Grade/production-guards"
+      },
+      "description": "Stops the expensive habits: full-resolution image reads on big models, renders and downloads in the foreground, sleep-and-poll loops."
+    }
+  ]
+}
